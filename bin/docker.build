@@ -1,0 +1,8 @@
+#!/bin/bash
+IMAGE_NAME="usermanager"
+
+# Build Container
+docker build -t $IMAGE_NAME .
+
+# Run Container
+docker run -d -p 9000:9000 $IMAGE_NAME --db_host=localhost --db_port=5432
