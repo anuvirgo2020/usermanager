@@ -1,9 +1,9 @@
 from flask import request, jsonify
-from flask_restful import Resources 
-from models import user 
+from flask_restful import Resource 
+from models import User 
 from db import db
 
-class UserRoutes(Resources):
+class UserRoutes(Resource):
     def __init__():
         pass
     def get(self, userid=None):
